@@ -35,7 +35,11 @@ export default {
     </div>
 
     <!-- Side buttons -->
-    <div class="hero-btns"></div>
+    <div class="hero-icons d-flex flex-column g-3">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-regular fa-newspaper"></i>
+      <i class="fa-regular fa-life-ring"></i>
+    </div>
 
     <!-- Wave Image -->
     <img class="wave w-100 d-block" src="/images/Wave-1.png" alt="" />
@@ -43,6 +47,7 @@ export default {
 </template>
 <style scoped>
 .hero {
+  position: relative;
   color: var(--text-white);
   background-image: url("/images/hero.png");
   background-repeat: no-repeat;
@@ -59,6 +64,19 @@ export default {
     & h1 {
       font-weight: 900;
     }
+  }
+
+  .hero-icons {
+    box-shadow: black 0 0 20px -5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%);
+    width: 50px;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent-yellow);
   }
 }
 </style>
