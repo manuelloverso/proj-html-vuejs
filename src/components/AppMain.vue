@@ -40,7 +40,38 @@ export default {
     </section>
 
     <!-- EduPrime faculties available section -->
-    <section class="faculties"></section>
+    <section class="faculties">
+      <h2>Faculties available at EduPrime</h2>
+      <p>
+        A single university with a load of courses, tailored to satisfy any
+        student's needs.
+      </p>
+
+      <div class="img-squares d-flex">
+        <div class="square"></div>
+        <div class="square">
+          <img src="/images/Gavel-v2.png" alt="" />
+          <h4>Law Faculty</h4>
+        </div>
+        <div class="square">
+          <img src="/images/Coins-tabs-v2.png" alt="" />
+          <h4>Economy</h4>
+        </div>
+        <div class="square">
+          <img src="/images/Medicine-tabs-v2.png" alt="" />
+          <h4>Medicine</h4>
+        </div>
+        <div class="square">
+          <img src="/images/Computer-tabs-v2.png" alt="" />
+          <h4>Computer Scinece</h4>
+        </div>
+        <div class="square">
+          <img src="/images/Palette-tabs-v2.png" alt="" />
+          <h4>Graphic Design</h4>
+        </div>
+        <div class="square"></div>
+      </div>
+    </section>
 
     <!-- University year section -->
     <section class="university-year">
@@ -71,6 +102,34 @@ main {
     color: var(--text-dark);
     background-image: url("/images/home-background.png");
     background-repeat: no-repeat;
+  }
+
+  .faculties {
+    .img-squares {
+      box-shadow: var(--border-light-grey) 0 0 30px 0;
+    }
+    .square {
+      width: calc(100% / 7);
+      aspect-ratio: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+
+      &:not(:first-child, :last-child) {
+        border: var(--border-light-grey) 1px solid;
+      }
+
+      & img {
+        width: 50%;
+      }
+
+      & h4 {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+      }
+    }
   }
 }
 </style>
