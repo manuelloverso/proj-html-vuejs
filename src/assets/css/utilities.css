@@ -13,6 +13,9 @@
 }
 
 /* COLUMNS */
+[class*="col-"] {
+  padding: 1rem;
+}
 
 .col-1 {
   width: calc(100% / 12);
