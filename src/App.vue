@@ -1,12 +1,12 @@
 <script>
-import AppHeader from "./components/AppHeader.vue";
+import HeroSection from "./components/HeroSection.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
-    AppHeader,
+    HeroSection,
     AppMain,
     AppFooter,
   },
@@ -16,7 +16,13 @@ export default {
 };
 </script>
 <template>
-  <h1>ciao</h1>
-  <AppHeader />
+  <!-- Hero section and header -->
+  <HeroSection />
+
+  <!-- Site Main -->
+  <AppMain />
+
+  <!-- Site Footer -->
+  <AppFooter />
 </template>
 <style scoped></style>
