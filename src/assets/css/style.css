@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-white: #fff;
+  --accent-yellow: #e9d758;
+  --primary-color: #e56768;
+  --lighter-primary: #da5f60e6;
+}
+
 body {
   font-family: "Zen Maru Gothic", serif;
+}
+
+[class^="container"] {
+  margin: auto;
+}
+
+.container-xl {
+  width: 95%;
+}
+
+.container-lg {
+  width: 70%;
+}
+
+.container-sm {
+  width: 40%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", serif;
+  border: none;
+  padding: 20px 40px;
+}
+
+.btn-accent {
+  background-color: var(--accent-yellow);
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 40px;
 }

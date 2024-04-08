@@ -24,4 +24,13 @@ export default {
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.hero {
+  color: var(--text-white);
+  height: 700px;
+  background-image: url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+</style>
