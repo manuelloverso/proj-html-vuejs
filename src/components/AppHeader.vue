@@ -35,6 +35,9 @@ export default {
   </header>
 </template>
 <style scoped>
+header {
+  margin-bottom: 5rem;
+}
 nav li a {
   color: white;
   text-decoration: none;
