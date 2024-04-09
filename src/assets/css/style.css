@@ -36,6 +36,14 @@ p {
   font-weight: 500;
 }
 
+.m-neg-bottom {
+  margin-bottom: -3px;
+}
+
+.m-neg-top {
+  margin-top: -3px;
+}
+
 .container-xl {
   width: 95%;
 }

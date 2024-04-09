@@ -74,7 +74,7 @@ export default {
       </div>
 
       <!-- Pic and text -->
-      <div class="container-md row">
+      <div class="container-md row mb-6">
         <div class="left col-6 d-flex justify-center align-center">
           <img class="w-70" src="/images/Gavel-Illustration.png" alt="Gravel" />
         </div>
@@ -89,17 +89,13 @@ export default {
           <button class="btn-primary">Read More</button>
         </div>
       </div>
+
+      <!-- Wave Image -->
+      <img class="w-100 m-neg-bottom d-block" src="/svg/svg-0.svg" alt="" />
     </section>
 
     <!-- University year section -->
     <section class="university-year">
-      <!-- Wave Image -->
-      <img
-        class="wave upside-down w-100 d-block"
-        src="/images/Wave-1.png"
-        alt=""
-      />
-
       <img
         style="width: 80px"
         class="d-block mx-auto mb-3"
@@ -199,14 +195,15 @@ export default {
         </div>
       </div>
 
-      <button class="btn-accent d-block mx-auto">View All Events</button>
-
-      <!-- Wave Image -->
-      <img class="wave w-100 d-block" src="/images/Wave-1.png" alt="" />
+      <div class="pb-6">
+        <button class="btn-accent d-block mx-auto">View All Events</button>
+      </div>
     </section>
 
     <!-- Latest Courses section -->
     <section class="latest-courses">
+      <!-- Wave Image -->
+      <img class="w-100 d-block mb-4 m-neg-top" src="/svg/svg-1.svg" alt="" />
       <div class="container-lg">
         <h2 class="fs-7 mb-6">Latest Courses</h2>
         <div class="row">
@@ -373,7 +370,6 @@ main {
   }
 
   .faculties {
-    padding-bottom: 5rem;
     .img-squares {
       margin-bottom: 5rem;
       box-shadow: var(--border-light-grey) 0 0 30px 0;
@@ -513,7 +509,7 @@ main {
   }
 
   .latest-courses {
-    padding: 4rem 0;
+    padding-bottom: 4rem;
 
     & h2 {
       padding-left: 16px;

@@ -42,7 +42,7 @@ export default {
     </div>
 
     <!-- Wave Image -->
-    <img class="wave w-100 d-block" src="/images/Wave-1.png" alt="" />
+    <img class="m-neg-bottom w-100 d-block" src="/images/Wave-1.png" alt="" />
   </div>
 </template>
 <style scoped>
