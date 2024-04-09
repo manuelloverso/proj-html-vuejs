@@ -283,10 +283,61 @@ export default {
     </section>
 
     <!-- Benefits section -->
-    <section class="benefits"></section>
+    <section class="benefits">
+      <div class="row container-lg">
+        <div class="left col-6">
+          <img width="60" class="mb-2" src="/images/Exam-icon.png" alt="" />
+          <h2 class="fs-7 mb-4">The most efficient examination method</h2>
+          <p class="mb-5">
+            EduPrime has gathered teachers from around the globe to brainstorm
+            in order to facilitate the evaluation for our students. Every
+            teacher from our university has an influence on how students are
+            evaluated at his/her subject.
+          </p>
+          <button class="btn-primary fs-3">Discover the Mehtod</button>
+        </div>
+        <div class="right col-6 d-flex justify-center align-center">
+          <img class="w-80" src="/images/Exam-Illustration.png" alt="" />
+        </div>
+      </div>
+
+      <div class="row container-lg">
+        <div class="left col-6 d-flex justify-center align-center">
+          <img class="w-80" src="/images/Girl-Illustration.png" alt="" />
+        </div>
+        <div class="right col-6">
+          <img width="60" class="mb-2" src="/images/Exam-icon-1.png" alt="" />
+          <h2 class="fs-7 mb-4">Variable fees for international students</h2>
+          <p class="mb-5">
+            EduPrime has gathered teachers from around the globe to brainstorm
+            in order to facilitate the evaluation for our students. Every
+            teacher from our university has an influence on how students are
+            evaluated at his/her subject.
+          </p>
+          <button class="btn-primary fs-3">List of Fees</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Newsletter section -->
-    <section class="newsletter"></section>
+    <section class="newsletter">
+      <div class="row align-center justify-between container-lg">
+        <h2 class="fs-7">Subscribe Now to Our Newsletter !</h2>
+        <form>
+          <div class="input-bar">
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Email address..."
+            />
+            <button type="submit" class="btn-accent">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- Partners section -->
     <section class="partners"></section>
@@ -483,6 +534,47 @@ main {
           transform: translate(-50%, +50%);
           font-size: 1.1rem;
           padding: 10px 15px;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    padding-top: 3rem;
+    & h2 {
+      line-height: 1.3;
+    }
+
+    .row {
+      margin-bottom: 6rem;
+    }
+  }
+
+  .newsletter {
+    background-color: var(--primary-color);
+    .row {
+      padding: 3.5rem 0;
+      color: white;
+
+      .input-bar {
+        position: relative;
+        & button {
+          position: absolute;
+          right: -10px;
+          padding: 1.45rem;
+          border-radius: 50%;
+
+          & i {
+            display: block;
+          }
+        }
+
+        & input {
+          width: 400px;
+          border: none;
+          padding: 1.5rem;
+          border-radius: 30px;
+          font-size: 1rem;
         }
       }
     }
