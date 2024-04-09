@@ -10,7 +10,7 @@ export default {
   <main>
     <!-- Browse through courses section -->
     <section class="courses">
-      <div class="d-flex container-lg">
+      <div class="row container-lg">
         <!-- Ledt section -->
         <div class="left col-6">
           <img width="60" src="/images/Books-icon.png" alt="Books" />
@@ -41,12 +41,13 @@ export default {
 
     <!-- EduPrime faculties available section -->
     <section class="faculties">
-      <h2>Faculties available at EduPrime</h2>
-      <p>
+      <h2 class="text-center fs-7 mb-3">Faculties available at EduPrime</h2>
+      <p style="width: 25%" class="mx-auto text-center fs-3 mb-6">
         A single university with a load of courses, tailored to satisfy any
         student's needs.
       </p>
 
+      <!-- Horizontal images squares -->
       <div class="img-squares d-flex">
         <div class="square"></div>
         <div class="square">
@@ -71,10 +72,34 @@ export default {
         </div>
         <div class="square"></div>
       </div>
+
+      <!-- Pic and text -->
+      <div class="container-md row">
+        <div class="left col-6 d-flex justify-center">
+          <img class="w-70" src="/images/Gavel-Illustration.png" alt="Gravel" />
+        </div>
+        <div class="right col-6">
+          <h2 class="fs-7 mb-4">Law Faculty</h2>
+          <p class="lighter mb-4">
+            Learning from world-leading academics and practitioners, you'll not
+            only receive an outstanding grounding in the theory of law, but
+            you'll be able to understand how those principles are applied in
+            practice through a range of student-led activities and competitions
+          </p>
+          <button class="btn-primary">Read More</button>
+        </div>
+      </div>
     </section>
 
     <!-- University year section -->
     <section class="university-year">
+      <!-- Wave Image -->
+      <img
+        class="wave upside-down w-100 d-block"
+        src="/images/Wave-1.png"
+        alt=""
+      />
+
       <!-- University Path -->
       <div class="path"></div>
 
@@ -97,15 +122,18 @@ export default {
 </template>
 <style scoped>
 main {
+  color: var(--text-dark);
   .courses {
-    padding-top: 4rem;
-    color: var(--text-dark);
+    padding: 4rem 0;
     background-image: url("/images/home-background.png");
     background-repeat: no-repeat;
+    background-position: right;
   }
 
   .faculties {
+    padding-bottom: 5rem;
     .img-squares {
+      margin-bottom: 5rem;
       box-shadow: var(--border-light-grey) 0 0 30px 0;
     }
     .square {
@@ -129,6 +157,19 @@ main {
         font-size: 1.5rem;
         color: var(--primary-color);
       }
+    }
+
+    .lighter {
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+  }
+
+  .university-year {
+    padding-bottom: 6rem;
+    background-color: var(--primary-color);
+    .wave {
+      margin-bottom: 6rem;
     }
   }
 }

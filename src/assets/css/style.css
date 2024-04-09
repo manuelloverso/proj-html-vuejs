@@ -7,6 +7,7 @@
 :root {
   --text-white: #fff;
   --text-dark: #3d404f;
+  --text-light: #8b8b8a;
   --accent-yellow: #e9d758;
   --primary-color: #e56768;
   --lighter-primary: #da5f60e6;
@@ -36,6 +37,11 @@ p {
 
 .container-lg {
   width: 70%;
+  max-width: 1400px;
+}
+
+.container-md {
+  width: 60%;
 }
 
 ul {
@@ -60,4 +66,13 @@ button {
 .btn-white-primary {
   background-color: var(--text-white);
   color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.upside-down {
+  transform: rotateX(180deg);
 }
