@@ -15,7 +15,7 @@ export default {
   <header class="container-xl d-flex justify-between align-center pt-5">
     <!-- Site Logo -->
     <div class="logo">
-      <img width="300" src="/images/theme_eduprime_logo.png" alt="" />
+      <img class="w-100" src="/images/theme_eduprime_logo.png" alt="" />
     </div>
 
     <!-- Right Header -->
@@ -37,11 +37,24 @@ export default {
 <style scoped>
 header {
   margin-bottom: 5rem;
-}
-nav li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 600;
+  .logo {
+    width: 300px;
+  }
+
+  nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 1500px) {
+    .logo {
+      width: 200px;
+    }
+
+    button {
+      display: none;
+    }
+  }
 }
 </style>

@@ -346,7 +346,7 @@ export default {
         Levarage agile frameworks to provide a robust synopsis for high level
         overviews. Iterative approaches to corporate strategy.
       </p>
-      <div class="icons row">
+      <div class="icons row container-xl">
         <img src="/images/partner-2.png" alt="" />
         <img src="/images/partner-1.png" alt="" />
         <img src="/images/partner-3.png" alt="" />
@@ -398,6 +398,7 @@ main {
       & h4 {
         font-size: 1.5rem;
         color: var(--primary-color);
+        text-align: center;
       }
     }
 
@@ -429,7 +430,7 @@ main {
       padding: 7rem 0;
       margin-bottom: 6rem;
       position: relative;
-      width: 1200px;
+      max-width: 1200px;
       margin-right: auto;
       margin-left: auto;
 
@@ -452,7 +453,7 @@ main {
 
       .demo {
         top: 0;
-        left: 280px;
+        left: 23%;
       }
 
       .orientation {
@@ -571,6 +572,18 @@ main {
 
   .newsletter {
     background-color: var(--primary-color);
+
+    @media screen and (max-width: 1700px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        margin-bottom: 2rem;
+      }
+    }
+
     .row {
       padding: 3.5rem 0;
       color: white;
