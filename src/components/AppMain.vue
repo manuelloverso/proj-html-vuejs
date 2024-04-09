@@ -100,11 +100,109 @@ export default {
         alt=""
       />
 
+      <img
+        style="width: 80px"
+        class="d-block mx-auto mb-3"
+        src="/images/Clock-and-Bell.png"
+        alt=""
+      />
+      <h2 class="text-center fs-7"><span>University Year</span></h2>
+
       <!-- University Path -->
-      <div class="path"></div>
+      <div class="path">
+        <div class="orientation">
+          <h4>Orientation</h4>
+          <p>
+            First day of the university year, all students gather for the
+            opening ceremony and then network with others.
+          </p>
+        </div>
+        <div class="demo">
+          <h4>Demo Classes</h4>
+          <p>
+            In the first week, students try to accomodate with the teaching
+            style and choose their optional courses.
+          </p>
+        </div>
+        <div class="evaluation">
+          <h4>Evaluation</h4>
+          <p>
+            At the end of a semester, students take a general evaluation test
+            for every subject they're learning.
+          </p>
+        </div>
+        <div class="graduation">
+          <h4>Graduation Day</h4>
+          <p>
+            On the day of graduation, all students gather for the ceremony and
+            then network and party among others.
+          </p>
+        </div>
+        <img
+          class="w-100 d-block mx-auto"
+          src="/images/Timeline-Item.png"
+          alt=""
+        />
+      </div>
+
+      <img
+        style="width: 80px"
+        class="d-block mx-auto mb-1"
+        src="/images/Clock-and-Bell.png"
+        alt=""
+      />
+      <h2 class="text-center fs-7">Upcoming Events</h2>
 
       <!-- Upcoming Events -->
-      <div class="events"></div>
+      <div class="events container-lg row">
+        <div class="col-4">
+          <div class="square">
+            <h4>Coaching Sessions</h4>
+            <span
+              ><i class="fa-regular fa-calendar-days fa-sm"></i> 20 May 21:30
+              PM</span
+            >
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+              error [...]
+            </p>
+            <button>+ Find More</button>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="square">
+            <h4>Coaching Sessions</h4>
+            <span
+              ><i class="fa-regular fa-calendar-days fa-sm"></i> 20 May 21:30
+              PM</span
+            >
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+              error [...]
+            </p>
+            <button>+ Find More</button>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="square">
+            <h4>Coaching Sessions</h4>
+            <span
+              ><i class="fa-regular fa-calendar-days fa-sm"></i> 20 May 21:30
+              PM</span
+            >
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+              error [...]
+            </p>
+            <button>+ Find More</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-accent d-block mx-auto">View All Events</button>
+
+      <!-- Wave Image -->
+      <img class="wave w-100 d-block" src="/images/Wave-1.png" alt="" />
     </section>
 
     <!-- Latest Courses section -->
@@ -166,10 +264,106 @@ main {
   }
 
   .university-year {
-    padding-bottom: 6rem;
     background-color: var(--primary-color);
-    .wave {
+    .wave:first-child {
       margin-bottom: 6rem;
+    }
+
+    .wave:last-child {
+      margin-top: 6rem;
+    }
+
+    & > h2 {
+      margin-bottom: 6rem;
+      color: white;
+      & span {
+        background-color: red;
+      }
+    }
+
+    .path {
+      padding: 7rem 0;
+      margin-bottom: 6rem;
+      position: relative;
+      width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+
+      & div {
+        position: absolute;
+        width: 400px;
+        text-align: center;
+        color: white;
+
+        & h4 {
+          font-size: 1.3rem;
+          font-weight: 900;
+          margin-bottom: 1rem;
+        }
+
+        & p {
+          font-weight: 400;
+        }
+      }
+
+      .demo {
+        top: 0;
+        left: 280px;
+      }
+
+      .orientation {
+        bottom: 0;
+        left: 30px;
+      }
+
+      .graduation {
+        top: 0;
+        right: 30px;
+      }
+
+      .evaluation {
+        bottom: 0;
+        right: 280px;
+      }
+    }
+
+    .events {
+      margin-bottom: 4.5rem;
+      .square {
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+        padding: 2rem;
+        text-align: center;
+
+        & h4 {
+          font-size: 2rem;
+          font-weight: 900;
+        }
+
+        & span {
+          display: inline-block;
+          font-weight: 500;
+          color: var(--text-light);
+          margin-bottom: 5px;
+        }
+
+        & p {
+          color: var(--text-light);
+          margin-bottom: 30px;
+        }
+
+        & button {
+          background-color: var(--primary-color);
+          color: white;
+          position: absolute;
+          padding: 10px 20px;
+          box-shadow: black 0 0 10px -5px;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, +50%);
+        }
+      }
     }
   }
 }
