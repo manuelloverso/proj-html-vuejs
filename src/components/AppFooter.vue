@@ -6,5 +6,12 @@ export default {
   },
 };
 </script>
-<template></template>
-<style scoped></style>
+<template>
+  <footer></footer>
+</template>
+<style scoped>
+footer {
+  padding: 4rem;
+  background-color: var(--primary-color);
+}
+</style>

@@ -340,7 +340,26 @@ export default {
     </section>
 
     <!-- Partners section -->
-    <section class="partners"></section>
+    <section class="partners text-center">
+      <h2 class="fs-7 mb-4">Partners</h2>
+      <p class="mx-auto mb-5">
+        Levarage agile frameworks to provide a robust synopsis for high level
+        overviews. Iterative approaches to corporate strategy.
+      </p>
+      <div class="icons row">
+        <img src="/images/partner-2.png" alt="" />
+        <img src="/images/partner-1.png" alt="" />
+        <img src="/images/partner-3.png" alt="" />
+        <img src="/images/partner-4.png" alt="" />
+        <img src="/images/partner-5.png" alt="" />
+        <img src="/images/partner-6.png" alt="" />
+        <img src="/images/partner-7.png" alt="" />
+        <img src="/images/partner-8.png" alt="" />
+      </div>
+
+      <!-- Wave Image -->
+      <img class="wave" src="/images/background-wave3.png" alt="" />
+    </section>
   </main>
 </template>
 <style scoped>
@@ -577,6 +596,33 @@ main {
           font-size: 1rem;
         }
       }
+    }
+  }
+
+  .partners {
+    padding-top: 3rem;
+
+    & p {
+      width: 500px;
+    }
+
+    .icons {
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 50px;
+
+      & img {
+        height: 50px;
+        filter: opacity(40%);
+      }
+    }
+
+    .wave {
+      display: block;
+      width: 100%;
+      height: 200px;
+      transform: rotate(180deg);
+      filter: contrast(90%);
     }
   }
 }
