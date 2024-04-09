@@ -6,12 +6,17 @@
 
 :root {
   --text-white: #fff;
+  --bg-buttons: #454545;
   --text-dark: #3d404f;
   --text-light: #8b8b8a;
   --accent-yellow: #e9d758;
   --primary-color: #e56768;
   --lighter-primary: #da5f60e6;
   --border-light-grey: #ececee;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,4 +80,25 @@ button {
 
 .upside-down {
   transform: rotateX(180deg);
+}
+
+.input-bar {
+  position: relative;
+  & button {
+    position: absolute;
+    right: -10px;
+    padding: 1.45rem;
+    border-radius: 50%;
+
+    & i {
+      display: block;
+    }
+  }
+
+  & input {
+    border: none;
+    padding: 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
 }

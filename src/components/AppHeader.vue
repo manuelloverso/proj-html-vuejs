@@ -12,7 +12,10 @@ export default {
 </script>
 <template>
   <!-- Site Header -->
-  <header class="container-xl d-flex justify-between align-center pt-5">
+  <header
+    id="header"
+    class="container-xl d-flex justify-between align-center pt-5"
+  >
     <!-- Site Logo -->
     <div class="logo">
       <img class="w-100" src="/images/theme_eduprime_logo.png" alt="" />

@@ -588,26 +588,8 @@ main {
       padding: 3.5rem 0;
       color: white;
 
-      .input-bar {
-        position: relative;
-        & button {
-          position: absolute;
-          right: -10px;
-          padding: 1.45rem;
-          border-radius: 50%;
-
-          & i {
-            display: block;
-          }
-        }
-
-        & input {
-          width: 400px;
-          border: none;
-          padding: 1.5rem;
-          border-radius: 30px;
-          font-size: 1rem;
-        }
+      & input {
+        width: 400px;
       }
     }
   }
