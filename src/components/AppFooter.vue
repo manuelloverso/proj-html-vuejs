@@ -24,7 +24,7 @@ export default {
         <span> Related Themes</span>
       </button>
     </div>
-    <div class="row container-lg">
+    <div class="row">
       <div class="col-4 left">
         <div class="logo mb-4">
           <img class="w-100" src="/images/theme_eduprime_logo.png" alt="" />
@@ -109,6 +109,9 @@ footer {
   }
 
   & > .row {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
     .logo {
       width: 80%;
     }

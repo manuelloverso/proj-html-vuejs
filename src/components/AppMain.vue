@@ -409,6 +409,7 @@ main {
   }
 
   .university-year {
+    padding: 6rem 0;
     background-color: var(--primary-color);
     .wave:first-child {
       margin-bottom: 6rem;
