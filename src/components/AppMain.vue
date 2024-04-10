@@ -1,8 +1,16 @@
 <script>
+import { store } from "../store.js";
+import CourseCard from "./CourseCard.vue";
+
 export default {
   name: "AppMain",
+  components: {
+    CourseCard,
+  },
   data() {
-    return {};
+    return {
+      store,
+    };
   },
 };
 </script>
@@ -209,74 +217,7 @@ export default {
       <div class="container-lg">
         <h2 class="fs-7 mb-6">Latest Courses</h2>
         <div class="row">
-          <div class="col-3">
-            <div class="square">
-              <img src="/images/Decisions-icon.png" alt="" />
-              <h4>Make Better Decisions</h4>
-              <p>
-                <i class="fa-regular fa-user fa-sm"></i> Teacher:
-                <strong>James Colins</strong>
-              </p>
-              <p>
-                <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
-                <strong>$21.00</strong>
-              </p>
-              <button class="hover-accent btn-primary">
-                <i class="fa-regular fa-eye fa-sm"></i> View Course
-              </button>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="square">
-              <img src="/images/Speaker-icon.png" alt="" />
-              <h4>How to be a speaker</h4>
-              <p>
-                <i class="fa-regular fa-user fa-sm"></i> Teacher:
-                <strong>James Colins</strong>
-              </p>
-              <p>
-                <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
-                <strong>$21.00</strong>
-              </p>
-              <button class="hover-accent btn-primary">
-                <i class="fa-regular fa-eye fa-sm"></i> View Course
-              </button>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="square">
-              <img src="/images/Network-icon.png" alt="" />
-              <h4>Network Introductions</h4>
-              <p>
-                <i class="fa-regular fa-user fa-sm"></i> Teacher:
-                <strong>James Colins</strong>
-              </p>
-              <p>
-                <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
-                <strong>$21.00</strong>
-              </p>
-              <button class="hover-accent btn-primary">
-                <i class="fa-regular fa-eye fa-sm"></i> View Course
-              </button>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="square">
-              <img src="/images/Brand-icon.png" alt="" />
-              <h4>Brand Management</h4>
-              <p>
-                <i class="fa-regular fa-user fa-sm"></i> Teacher
-                <strong>James Colins</strong>
-              </p>
-              <p>
-                <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
-                <strong>$21.00</strong>
-              </p>
-              <button class="hover-accent btn-primary">
-                <i class="fa-regular fa-eye fa-sm"></i> View Course
-              </button>
-            </div>
-          </div>
+          <CourseCard :course="course" v-for="course in store.latestCourses" />
         </div>
       </div>
     </section>
@@ -523,45 +464,6 @@ main {
 
     & h2 {
       padding-left: 16px;
-    }
-
-    .row {
-      align-items: stretch;
-      .square {
-        height: 100%;
-        position: relative;
-        box-shadow: var(--border-light-grey) 0 0 20px 0px;
-        padding: 2rem;
-        text-align: center;
-
-        & h4 {
-          font-weight: 900;
-          font-size: 1.3rem;
-          margin-bottom: 5px;
-        }
-
-        & p {
-          margin-bottom: 5px;
-        }
-
-        & p:nth-child(4) {
-          margin-bottom: 2rem;
-        }
-
-        & img {
-          width: 30%;
-          margin-bottom: 1rem;
-        }
-
-        & button {
-          position: absolute;
-          white-space: nowrap;
-          bottom: 0;
-          transform: translate(-50%, +50%);
-          font-size: 1.1rem;
-          padding: 10px 15px;
-        }
-      }
     }
   }
 

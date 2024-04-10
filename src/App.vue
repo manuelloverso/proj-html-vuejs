@@ -2,6 +2,7 @@
 import HeroSection from "./components/HeroSection.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
+import CourseClass from "./courseClass";
 
 export default {
   name: "App",
