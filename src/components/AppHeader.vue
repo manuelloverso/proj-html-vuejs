@@ -33,7 +33,9 @@ export default {
       </nav>
 
       <!-- View courses button -->
-      <button class="view-courses btn-accent">VIEW COURSES</button>
+      <button class="view-courses btn-accent hover-primary">
+        VIEW COURSES
+      </button>
     </div>
   </header>
 </template>
@@ -42,13 +44,20 @@ header {
   margin-bottom: 5rem;
   .logo {
     width: 300px;
+    cursor: pointer;
   }
 
   nav li a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
   }
   @media screen and (max-width: 1500px) {
     .logo {

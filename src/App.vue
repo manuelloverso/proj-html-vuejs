@@ -44,7 +44,7 @@ export default {
 };
 </script>
 <template>
-  <a href="#header" class="btn-accent back-to-top">
+  <a href="#header" class="btn-accent hover-primary back-to-top">
     <i class="fa-solid fa-chevron-up"></i>
   </a>
 

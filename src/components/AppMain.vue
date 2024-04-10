@@ -25,7 +25,7 @@ export default {
             thanks to the number of courses it provides.
           </p>
 
-          <button class="btn-accent">Browse through courses</button>
+          <button class="hover-red btn-accent">Browse through courses</button>
         </div>
 
         <!-- right section -->
@@ -86,7 +86,7 @@ export default {
             you'll be able to understand how those principles are applied in
             practice through a range of student-led activities and competitions
           </p>
-          <button class="btn-primary">Read More</button>
+          <button class="btn-primary hover-accent">Read More</button>
         </div>
       </div>
 
@@ -196,7 +196,9 @@ export default {
       </div>
 
       <div class="pb-6">
-        <button class="btn-accent d-block mx-auto">View All Events</button>
+        <button class="btn-accent hover-primary d-block mx-auto">
+          View All Events
+        </button>
       </div>
     </section>
 
@@ -219,7 +221,7 @@ export default {
                 <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
                 <strong>$21.00</strong>
               </p>
-              <button class="btn-primary">
+              <button class="hover-accent btn-primary">
                 <i class="fa-regular fa-eye fa-sm"></i> View Course
               </button>
             </div>
@@ -236,7 +238,7 @@ export default {
                 <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
                 <strong>$21.00</strong>
               </p>
-              <button class="btn-primary">
+              <button class="hover-accent btn-primary">
                 <i class="fa-regular fa-eye fa-sm"></i> View Course
               </button>
             </div>
@@ -253,7 +255,7 @@ export default {
                 <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
                 <strong>$21.00</strong>
               </p>
-              <button class="btn-primary">
+              <button class="hover-accent btn-primary">
                 <i class="fa-regular fa-eye fa-sm"></i> View Course
               </button>
             </div>
@@ -263,14 +265,14 @@ export default {
               <img src="/images/Brand-icon.png" alt="" />
               <h4>Brand Management</h4>
               <p>
-                <i class="fa-regular fa-user fa-sm"></i> Teacher:
+                <i class="fa-regular fa-user fa-sm"></i> Teacher
                 <strong>James Colins</strong>
               </p>
               <p>
                 <i class="fa-regular fa-money-bill-1 fa-sm"></i> Price:
                 <strong>$21.00</strong>
               </p>
-              <button class="btn-primary">
+              <button class="hover-accent btn-primary">
                 <i class="fa-regular fa-eye fa-sm"></i> View Course
               </button>
             </div>
@@ -291,7 +293,9 @@ export default {
             teacher from our university has an influence on how students are
             evaluated at his/her subject.
           </p>
-          <button class="btn-primary fs-3">Discover the Mehtod</button>
+          <button class="hover-accent btn-primary fs-3">
+            Discover the Mehtod
+          </button>
         </div>
         <div class="right col-6 d-flex justify-center align-center">
           <img class="w-80" src="/images/Exam-Illustration.png" alt="" />
@@ -311,7 +315,7 @@ export default {
             teacher from our university has an influence on how students are
             evaluated at his/her subject.
           </p>
-          <button class="btn-primary fs-3">List of Fees</button>
+          <button class="hover-accent btn-primary fs-3">List of Fees</button>
         </div>
       </div>
     </section>
@@ -328,7 +332,7 @@ export default {
               id="newsletter"
               placeholder="Email address..."
             />
-            <button type="submit" class="btn-accent">
+            <button type="submit" class="btn-accent hover-primary">
               <i class="fa-solid fa-paper-plane"></i>
             </button>
           </div>
@@ -503,6 +507,11 @@ main {
           bottom: 0;
           left: 50%;
           transform: translate(-50%, +50%);
+
+          &:hover {
+            background-color: var(--accent-yellow);
+            color: white;
+          }
         }
       }
     }

@@ -61,7 +61,7 @@ export default {
         <!-- search bar -->
         <div class="input-bar mb-3">
           <input type="text" placeholder="Search..." />
-          <button class="btn-accent">
+          <button class="btn-accent hover-primary">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
@@ -124,6 +124,12 @@ footer {
         padding: 8px 15px;
         font-size: 0.8rem;
         font-weight: 400;
+
+        &:hover {
+          background-color: white;
+          font-weight: 500;
+          color: var(--primary-color);
+        }
       }
     }
 
@@ -142,6 +148,10 @@ footer {
           border-radius: 50%;
           margin-right: 15px;
 
+          &:hover i {
+            color: var(--accent-yellow);
+          }
+
           & i {
             display: block;
             color: white;
@@ -159,6 +169,11 @@ footer {
     ul {
       & li {
         margin-bottom: 10px;
+
+        &:hover a {
+          text-decoration: underline;
+        }
+
         & a {
           text-decoration: none;
           color: white;

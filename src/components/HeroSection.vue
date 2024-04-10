@@ -25,10 +25,10 @@ export default {
         showcasing universities, courses, secondary schools etc.
       </p>
       <div class="hero-btns d-flex justify-evenly">
-        <button class="btn-accent">
+        <button class="btn-accent hover-primary">
           <i class="fa-solid fa-magnifying-glass fa-sm"></i> Search courses
         </button>
-        <button class="btn-white-primary">
+        <button class="btn-white-primary hover-primary">
           <i class="fa-solid fa-user-plus fa-sm"></i> Apply for university
         </button>
       </div>
@@ -67,6 +67,7 @@ export default {
   }
 
   .hero-icons {
+    cursor: pointer;
     box-shadow: black 0 0 20px -5px;
     border-radius: 10px;
     position: absolute;
@@ -77,6 +78,10 @@ export default {
     align-items: center;
     padding: 1rem;
     background-color: var(--accent-yellow);
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
   }
 }
 </style>
