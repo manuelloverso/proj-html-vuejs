@@ -74,16 +74,19 @@ button {
 .btn-accent {
   background-color: var(--accent-yellow);
   color: white;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .btn-white-primary {
   background-color: var(--text-white);
   color: var(--primary-color);
+  transition: background-color 0.2s ease-in-out;
 }
 
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--text-white);
+  transition: background-color 0.2s ease-in-out;
 }
 
 .hover-accent:hover {

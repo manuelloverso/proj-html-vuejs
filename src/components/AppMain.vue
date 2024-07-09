@@ -19,7 +19,7 @@ export default {
     <!-- Browse through courses section -->
     <section class="courses">
       <div class="row container-lg">
-        <!-- Ledt section -->
+        <!-- Left section -->
         <div class="left col-6">
           <img width="60" src="/images/Books-icon.png" alt="Books" />
           <h2 class="fs-7 mb-3">
@@ -327,6 +327,11 @@ main {
       align-items: center;
       flex-direction: column;
       gap: 1rem;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: rgb(230, 230, 230);
+      }
 
       &:not(:first-child, :last-child) {
         border: var(--border-light-grey) 1px solid;

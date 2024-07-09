@@ -127,6 +127,7 @@ footer {
         padding: 8px 15px;
         font-size: 0.8rem;
         font-weight: 400;
+        transition: background-color 0.2s ease-in-out;
 
         &:hover {
           background-color: white;
